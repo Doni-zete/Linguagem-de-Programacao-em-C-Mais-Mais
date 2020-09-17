@@ -3,7 +3,13 @@
 using namespace std;
 
 int main()
+int num, dobro;
+
+
 {
-    cout << "Hello world!" << endl;
+    cout << "Entre com um numero" << endl;
+    cin>>num1;
+
+
     return 0;
 }
