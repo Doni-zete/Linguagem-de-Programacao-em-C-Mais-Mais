@@ -4,8 +4,7 @@ using namespace std;
 
 int main()
 {
-    int num1,num2,soma;
-    int cont=0;
+    int num1,num2,res;
 
     {
         cout << "Entre com um numero" << endl;
@@ -13,9 +12,9 @@ int main()
         cout << "Entre com um numero" << endl;
         cin>>num2;
 
-        soma=num1+num2;
+        res=num1+2;
 
     }
-    cout<<"A soma e: "<<soma<<endl;
+    cout<<"A soma e: "<<res<<endl;
     return 0;
 }
