@@ -12,7 +12,7 @@ int main()
         cout << "Entre com um numero" << endl;
         cin>>num2;
 
-        res=num1+2;
+        res=num1+num2;
 
     }
     cout<<"A soma e: "<<res<<endl;
