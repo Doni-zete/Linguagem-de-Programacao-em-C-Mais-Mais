@@ -15,7 +15,6 @@ int main()
         cin>>vet[i];
     }
 
-
     for(i=0; i<MAX; i++)
         vet2[i]=vet[i];
 
