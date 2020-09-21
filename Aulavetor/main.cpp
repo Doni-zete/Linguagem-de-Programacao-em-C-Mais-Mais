@@ -24,7 +24,6 @@ int main()
     for(i=0; i<MAX; i++)
         cout<<endl<<vet[i]<<"\t\t"<<vet2[i];
 
-
     for(i=0; i<MAX; i++)
         vet[i]=vet2[(MAX-1)-i];
 
@@ -49,6 +48,7 @@ int main()
     for(i=0; i<MAX; i++)
 
         cout<<endl<<vet[i]<<"\t\t"<<vet2[i]<<endl;
+        cout<<endl<<endl;
     cout<<"A media e:"<<media;
     return 0;
 }
