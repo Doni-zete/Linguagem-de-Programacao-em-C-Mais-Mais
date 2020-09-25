@@ -15,6 +15,6 @@ int main()
     guarda=resultado*num1;
 
 
-    cout << "O resultado  e: "<<guarda << endl;
+    cout << "O resultado  e: "<<guarda << endl<<endl;
     return 0;
 }
