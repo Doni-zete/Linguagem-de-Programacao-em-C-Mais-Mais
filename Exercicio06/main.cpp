@@ -4,20 +4,22 @@ using namespace std;
 
 int main()
 {
-    int idade, totaldias,mes,dia,ano;
+    int a, b,c;
 
-    cout << "Entre com sua idade" << endl;
-    cin>>idade;
-    cout<<"Entre com mes"<<endl;
-    cin>>mes;
-    cout<<"Entre com o dia"<<endl;
-    cin>>dia;
+    cout << "Entre com o valor de A:" << endl;
+    cin>>a;
+    cout<<"Entre com o valor de B:"<<endl;
+    cin>>b;
 
-    totaldias=totaldias+(idade*365);
-    totaldias=totaldias+(mes*30);
-    totaldias=totaldias+dia;
+    c=a;
+    a=b;
+    b=c;
 
-    cout<<"OS dias"<<totaldias;
+    cout<<"O valor de A agora e "<<a<<endl;
+    cout<<"O valor de B agora e: "<<b;
+
+
+
 
 
 
