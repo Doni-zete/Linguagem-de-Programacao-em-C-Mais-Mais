@@ -25,13 +25,15 @@ int main()
         media=acumuloNota/cont;
 
         cout<<"Deseja cadastrar mais notas (S Sim)ou (N Nao): "<<endl;
-          cout<<endl;
+        cout<<endl;
         cin>>continuar;
 
-        if(nota>maior){
+        if(nota>maior)
+        {
             maior=nota;
         }
-        if(nota<menor){
+        if(nota<menor)
+        {
             menor=nota;
 
         }
