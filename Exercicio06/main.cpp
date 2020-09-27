@@ -18,11 +18,5 @@ int main()
     cout<<"O valor de A agora e "<<a<<endl;
     cout<<"O valor de B agora e: "<<b;
 
-
-
-
-
-
-
     return 0;
 }
