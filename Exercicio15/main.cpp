@@ -4,8 +4,6 @@
 
 using namespace std;
 
-
-
 int main()
 
 {
@@ -15,8 +13,6 @@ int main()
     int linha, coluna, i, qde, acc, maior, menor;
 
     char op;
-
-
 
     do
 
@@ -45,8 +41,6 @@ int main()
         cout << "\nDigite a sua opcao: ";
 
         cin >> op;
-
-
 
         switch (op)
 
