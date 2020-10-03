@@ -24,8 +24,6 @@ int main()
 
     }
 
-
-
     qde_par=0;
 
     for (i=0; i<10; i++)
@@ -35,8 +33,6 @@ int main()
             qde_par++;
 
     cout << "\n\nQuantidade de numeros pares: " << qde_par << "\n\n";
-
-
 
     acc_impar=0;
 
@@ -74,13 +70,7 @@ int main()
 
     }
 
-
-
     cout << "\n\nMaior par: " << maior_par << "\n\n";
-
-
-
-
 
     cont=0;
 
@@ -108,10 +98,6 @@ int main()
 
     }
 
-
-
     cout << "\n\nMenor impar: " << menor_impar << "\n\n";
-
-
 
 }
