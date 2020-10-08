@@ -12,6 +12,7 @@ int cubo(int x)
 
 int main()
 {
-    cout << "\nO cubo de 4 e:" <<cubo(5) <<endl;
+    int a=4;
+    cout << "\nO cubo de 4 e:" <<cubo(a) <<endl;
     return 0;
 }
