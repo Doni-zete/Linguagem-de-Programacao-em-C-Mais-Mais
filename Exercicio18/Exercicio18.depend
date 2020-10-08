@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1602186129 source:c:\users\donii\documents\fatec\cursos\github\linguagem-de-programacao-em-c-mais-mais\exercicio18\main.cpp
+	<iostream>
+	<stdlib.h>
+
