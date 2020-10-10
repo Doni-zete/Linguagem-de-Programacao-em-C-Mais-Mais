@@ -1,15 +1,7 @@
 #include <iostream>
-
 #include <math.h>
-
 #include <stdlib.h>
-
-
-
 using namespace std;
-
-
-
 float delta (float a, float b, float c)
 
 {
@@ -17,8 +9,6 @@ float delta (float a, float b, float c)
     return b*b-4*a*c;
 
 }
-
-
 
 void raizes (float a, float b, float c, float *x1, float *x2, float *Xv, float *Yv)
 
@@ -43,12 +33,6 @@ void raizes (float a, float b, float c, float *x1, float *x2, float *Xv, float *
     *Yv = (-dt)/(4*a);
 
 }
-
-
-
-
-
-
 
 int main()
 
@@ -75,26 +59,14 @@ int main()
     if (delta(a,b,c)>=0)
 
     {
-
         cout << "\nX1 = " << x1 << "\nX2 = " << x2;
-
-
-
     }
 
     else
 
-        cout << "\nNao existem raizes reais\n\n";
-
-
-
+    cout << "\nNao existem raizes reais\n\n";
     cout << "\nXv = " << Xv << "\nYv = " << Yv;
-
-
-
     cout << "\n\n\n";
-
-
 
     return 0;
 
