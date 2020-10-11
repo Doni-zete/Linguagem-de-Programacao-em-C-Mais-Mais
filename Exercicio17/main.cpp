@@ -62,6 +62,7 @@ int main()
         cout << "\nX1 = " << x1 << "\nX2 = " << x2;
     }
 
+
     else
 
     cout << "\nNao existem raizes reais\n\n";
