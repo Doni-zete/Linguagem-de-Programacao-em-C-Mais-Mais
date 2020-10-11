@@ -43,26 +43,18 @@ int main()
     cout << "Digite o valor de B: ";
     cin >> b;
     cout << "Digite o valor de C: ";
-
     cin >> c;
-
     raizes(a,b,c,&x1,&x2,&Xv,&Yv);
-
     cout << "\nDelta = " << delta(a,b,c);
-
     if (delta(a,b,c)>=0)
 
     {
         cout << "\nX1 = " << x1 << "\nX2 = " << x2;
     }
 
-
     else
-
     cout << "\nNao existem raizes reais\n\n";
     cout << "\nXv = " << Xv << "\nYv = " << Yv;
     cout << "\n\n\n";
-
     return 0;
-
 }
