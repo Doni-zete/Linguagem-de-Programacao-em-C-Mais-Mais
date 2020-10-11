@@ -37,17 +37,11 @@ void raizes (float a, float b, float c, float *x1, float *x2, float *Xv, float *
 int main()
 
 {
-
     float a,b,c,x1,x2,Xv,Yv;
-
     cout << "Digite o valor de A: ";
-
     cin >> a;
-
     cout << "Digite o valor de B: ";
-
     cin >> b;
-
     cout << "Digite o valor de C: ";
 
     cin >> c;
