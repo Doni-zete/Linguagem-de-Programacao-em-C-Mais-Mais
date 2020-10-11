@@ -15,15 +15,12 @@ void raizes (float a, float b, float c, float *x1, float *x2, float *Xv, float *
 {
 
     float dt;
-
     dt = delta(a,b,c);
-
     if (dt >=0)
 
     {
 
         *x1 = (-b+sqrt(dt))/(2*a);
-
         *x2 = (-b-sqrt(dt))/(2*a);
 
     }
