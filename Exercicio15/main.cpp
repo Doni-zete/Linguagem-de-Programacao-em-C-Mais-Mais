@@ -7,58 +7,37 @@ using namespace std;
 int main()
 
 {
-
     int mat[MAX][MAX];
-
     int linha, coluna, i, qde, acc, maior, menor;
-
-    char op;
-
+    char escolha;
     do
-
     {
-
         system("cls");
 
-        cout << "* * * * M E N U * * * *\n\n";
-
+        cout << "---------------------- M E N U--------------------\n\n";
         cout << "\n1 - Insere numeros na matriz";
-
         cout << "\n2 - Mostra matriz";
-
         cout << "\n3 - Calcula media dos numeros da matriz";
-
         cout << "\n4 - Calcula maior e menor numero da matriz";
-
-        cout << "\n5 - Calcula somatoria numeros impares DP";
-
-        cout << "\n6 - Calcula a quantidade de numeros pares da DS";
-
+        cout << "\n5 - Calcula somatoria numeros impares DIAGONAL PRINCIPAL";
+        cout << "\n6 - Calcula a quantidade de numeros pares da DIAGONAL SECUNDARIA";
         cout << "\n7 - Calcula o dobro da somatoria dos numeros pares das duas diagonais";
-
         cout << "\n9 - Sair\n";
-
         cout << "\nDigite a sua opcao: ";
+        cin >> escolha;
 
-        cin >> op;
-
-        switch (op)
+        switch (escolha)
 
         {
 
         case '1' :
             system("cls");
-
             cout << "* * * * Insere numeros na matriz * * * *\n\n";
 
             for (linha=0; linha<MAX; linha++)
-
                 for (coluna=0; coluna<MAX; coluna++)
-
                 {
-
                     cout << "Digite um numero: ";
-
                     cin >> mat[linha][coluna];
 
                 }
@@ -94,8 +73,6 @@ int main()
 
             break;
 
-
-
         case '3' :
             system("cls");
 
@@ -118,9 +95,6 @@ int main()
             system("pause");
 
             break;
-
-
-
         case '4' :
             system("cls");
 
@@ -200,8 +174,6 @@ int main()
 
             break;
 
-
-
         case '7' :
             system("cls");
 
@@ -222,25 +194,13 @@ int main()
                 if (mat[i][MAX-1-i]%2==0)
 
                     acc+=mat[i][MAX-1-i];
-
-
-
             cout << "\n\nDobro da somatoria dos pares das diagonais: " << 2*acc << "\n\n";
-
             system("pause");
-
             break;
 
         }
 
-
     }
-    while (op!='9');
-
-
-
-
-
-
+    while (escolha!='9');
 
 }
