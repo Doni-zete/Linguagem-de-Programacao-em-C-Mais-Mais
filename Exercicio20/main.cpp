@@ -4,6 +4,13 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+
+    int pilha[MAX],topo,elemento,op,flag;
+    topo=11;
+    do{
+        system("cls");
+    }
+    cout << "******MENU******\n\n\n" << endl;
+    cout<<"\n1 - push"
     return 0;
 }
