@@ -3,6 +3,29 @@
 
 using namespace std;
 
+int push (int p[],int*t,int e)
+{
+    if(*t>(MAX-2))
+        return 1;
+    else
+    {
+        -t= *t+1;
+        p[*t]=0;
+        return 0;
+    }
+}
+ void imprime(int p[],int t)
+ {
+     cout<<"\t\tPilha\n";
+     for(i=t;i>=0;i--)
+        cout <<"\t\t" <<p[i]<<"\n";
+     cout<<""\n\n;
+ }
+
+
+
+
+
 int main()
 {
 
