@@ -9,7 +9,7 @@ int push (int p[],int*t,int e)
         return 1;
     else
     {
-        -t= *t+1;
+        *t= *t+1;
         p[*t]=0;
         return 0;
     }
@@ -19,7 +19,7 @@ int push (int p[],int*t,int e)
      cout<<"\t\tPilha\n";
      for(i=t;i>=0;i--)
         cout <<"\t\t" <<p[i]<<"\n";
-     cout<<""\n\n;
+     cout<<"\n\n";
  }
 
 
