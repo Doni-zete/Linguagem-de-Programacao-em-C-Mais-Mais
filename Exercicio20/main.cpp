@@ -17,13 +17,10 @@ int push (int p[],int*t,int e)
  void imprime(int p[],int t)
  {
      cout<<"\t\tPilha\n";
-     for(i=t;i>=0;i--)
+     for(int i=t;i>=0;i--)
         cout <<"\t\t" <<p[i]<<"\n";
      cout<<"\n\n";
  }
-
-
-
 
 
 int main()
@@ -55,10 +52,21 @@ int main()
                   flag =  push(pilha,&topo,elemento);
                   if(flag==0)
                   cout<<"\n\nElemento inseriod com sucesso!";
-                  elsecout<<"\nn\Impossivel inserir..\nPilha cheia";
-                  sytem("pause");
+                  else
+                    cout<<"\n\nImpossivel inserir..\nPilha cheia";
+                  system("pause");
+                  break;
+
+                  case 3: system("pause");
+                  cout<<"*********IMPRIME PILHA*******\n\n\n";
+                  imprime(pilha,topo);
+                  system("pause");
+                  break;
+        }
 
         }
     while(op!=9);
+    }
         return 0;
     }
+
