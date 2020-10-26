@@ -42,6 +42,28 @@ int main()
 
 
         }
+
+
+         {
+        case 2 :
+            system("cls") ;
+            cout<<"****Remove da fila****\n\n\n";
+            flag = Remove_fila(&fim);
+            if(flag==0)
+
+                cout<<"\n\nElemento removido com sucesso com sucesso!!!\n\n";
+
+            else
+                cout<<"\n\nImpossivel remover...\nFila vazia!\n\n";
+            system("pause");
+            break;
+
+
+
+
+
+        }
+
     }
     while(op!=9)
 
