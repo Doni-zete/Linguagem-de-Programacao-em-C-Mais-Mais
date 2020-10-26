@@ -4,6 +4,14 @@
 
 using namespace std;
 
+int insere_fila(int fila[], int *fim, int e);
+int Remove_fila(int*fim);
+int imprime_fila(int fila[], int fim)
+
+
+
+
+
 int main()
 {
     int fila[MAX], fim, op,elemento, flag,insere_fila;
@@ -44,7 +52,7 @@ int main()
         }
 
 
-         {
+        {
         case 2 :
             system("cls") ;
             cout<<"****Remove da fila****\n\n\n";
@@ -59,13 +67,38 @@ int main()
             break;
 
 
+        case 3 :
+            system("cls") ;
+            cout<<"****Fila****\n\n\n";
+            flag = imprime_fila(fila,fim);
+            if(flag !=0)
+                cout<<"**** Fila vazia****\n\n\";
+                    system("pause");
+
+            break;
+
+
 
 
 
         }
+
 
     }
     while(op!=9)
 
         return 0;
 }
+
+int insere_fila(int fila[], int *fim, int e)
+{
+    if (*fim<=(MAX-2))
+    {
+
+    }
+}
+
+int Remove_fila(int*fim)
+
+
+int imprime_fila(int fila[], int fim)
