@@ -5,8 +5,8 @@
 using namespace std;
 
 int insere_fila(int fila[], int *fim, int e);
-int Remove_fila(int*fim);
-int imprime_fila(int fila[], int fim)
+int Remove_fila(int fila[], int*fim);
+int imprime_fila(int fila[], int fim);
 
 
 
@@ -14,7 +14,7 @@ int imprime_fila(int fila[], int fim)
 
 int main()
 {
-    int fila[MAX], fim, op,elemento, flag,insere_fila;
+    int fila[MAX], fim, op,elemento, flag;
     fim=-1;
     do
     {
@@ -49,14 +49,11 @@ int main()
 
 
 
-        }
 
-
-        {
         case 2 :
             system("cls") ;
             cout<<"****Remove da fila****\n\n\n";
-            flag = Remove_fila(&fim);
+            flag = Remove_fila(fila,&fim);
             if(flag==0)
 
                 cout<<"\n\nElemento removido com sucesso com sucesso!!!\n\n";
@@ -72,7 +69,7 @@ int main()
             cout<<"****Fila****\n\n\n";
             flag = imprime_fila(fila,fim);
             if(flag !=0)
-                cout<<"**** Fila vazia****\n\n\";
+                cout<<"**** Fila vazia****\n\n";
                     system("pause");
 
             break;
@@ -85,7 +82,7 @@ int main()
 
 
     }
-    while(op!=9)
+    while(op!=9);
 
         return 0;
 }
@@ -94,11 +91,39 @@ int insere_fila(int fila[], int *fim, int e)
 {
     if (*fim<=(MAX-2))
     {
+        *fim=*fim+1;
+        fila[*fim]=e;
+        return 0;
 
     }
+    else
+        return 1;
 }
 
-int Remove_fila(int*fim)
-
+int Remove_fila(int fila [],int*fim)
+{
+    if(*fim>=0)
+    {
+        for (int i = 0; i<(*fim);i++)
+            fila[i]=fila[i+1];
+        *fim =*fim-1;
+        return 0;
+    }
+    else
+        return 1;
+}
 
 int imprime_fila(int fila[], int fim)
+
+{
+    if(fim<0)
+        return 1;
+    else
+    {
+
+        for(int i=0; i<=fim; i++)
+            cout<<fila[i]<<" ";
+        cout<<"\n\n\n";
+        return 0;
+    }
+}
