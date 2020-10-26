@@ -14,8 +14,17 @@ int main()
             cout<<"\n1 - Insere na fila";
             cout<<"\n2 - Remove da fila";
             cout<<"\n3 - Imprime fila";
-            cout<<"\n9 - Sair\n"
-;    }while(op!=9)
+            cout<<"\n9 - Sair\n";
+            cout<<"\n    DIGITE A SUA OPCAO->";
+            cin>>op;
+
+            switch(op)
+
+            {
+              case 1 : system("cls") ;
+              cout<<"****Insere na fila"
+            }
+    }while(op!=9)
 
     return 0;
 }
