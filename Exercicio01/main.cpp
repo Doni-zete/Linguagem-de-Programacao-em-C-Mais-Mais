@@ -1,20 +1,50 @@
 #include <iostream>
-
+#define N 100
 using namespace std;
 
 int main()
 {
-    int num1,num2,res;
+char pilha[N];
+int t;
 
-    {
-        cout << "Entre com um numero" << endl;
-        cin>>num1;
-        cout << "Entre com um numero" << endl;
-        cin>>num2;
+// Esta função devolve 1 se a string ASCII s
+// contém uma sequência bem-formada de
+// parênteses e colchetes e devolve 0 se
+// a sequência é malformada.
 
-        res=num1+num2;
+int bemFormada (char s[])
 
-    }
-    cout<<"A soma e: "<<res<<endl;
-    return 0;
+   criapilha ();
+   for (int i = 0; s[i] != '\0'; ++i) {
+      char c;
+      switch (s[i]) {
+         case ')': if (pilhavazia ()) return 0;
+                   c = desempilha ();
+                   if (c != '(') return 0;
+                   break;
+         case ']': if (pilhavazia ()) return 0;
+                   c = desempilha ();
+                   if (c != '[') return 0;
+                   break;
+         default:  empilha (s[i]);
+      }
+   }
+   return pilhavazia ();
+}
+
+void criapilha (void) {
+   t = 0;
+}
+
+void empilha (char y) {
+   pilha[t++] = y;
+}
+
+char desempilha (void) {
+   return pilha[--t];
+}
+
+int pilhavazia (void) {
+   return t <= 0;
+}
 }
