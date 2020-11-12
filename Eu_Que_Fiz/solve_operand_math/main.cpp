@@ -67,7 +67,6 @@ void mostrar (TPilha *p)
     printf("\n\n");
 }
 
-
 int main()
 {
   TPilha p1;
@@ -113,7 +112,6 @@ int main()
   }
 
 return 0;
-
 
 }
 
