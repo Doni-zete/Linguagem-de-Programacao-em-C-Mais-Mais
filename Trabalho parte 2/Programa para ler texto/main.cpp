@@ -1,4 +1,6 @@
 #include <iostream>
+#include<stdlib.h>
+#include<stdio.h>
 
 using namespace std;
 
@@ -13,6 +15,6 @@ int main()
         return 0;
 
       }
-      fprintf (arquivo,"Donizete Crisostomo Barbosa\n Sertãozinho")
+      fprintf (arquivo,"Donizete Crisostomo Barbosa\n Sertãozinho");
     return 0;
 }
