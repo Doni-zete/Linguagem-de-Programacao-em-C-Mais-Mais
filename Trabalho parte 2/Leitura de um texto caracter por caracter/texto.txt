@@ -1,1 +1,1 @@
-Testando esse trem
+Testando esse trem leitura de um texto caracter por caracter

@@ -23,14 +23,16 @@ int main()
 
 
 
-  char textto[1000];
+  char texto[1000];
   for (i=0;!feof(arquivo);i++)
+  {
+
+
     texto[i]= fgetc(arquivo);
     printf("%c",texto [i]);
-    for (intj=0;j<=1000000;j++);
-
+    for (int j=0;j<=100000000;j++);
+  }
   return 0 ;
 
 
-    return 0;
 }
