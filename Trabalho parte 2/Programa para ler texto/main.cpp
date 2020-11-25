@@ -15,6 +15,10 @@ int main()
         return 0;
 
       }
-      fprintf (arquivo,"Donizete Crisostomo Barbosa\n Sertãozinho");
+      fprintf (arquivo,"Donizete Crisostomo Barbosa\n Sertãozinho\n\n");
+
+      fprintf(arquivo,"\nFeliz natal!!\n)
+
+      fclose(arquivo);
     return 0;
 }
