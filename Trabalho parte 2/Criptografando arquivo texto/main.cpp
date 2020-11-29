@@ -1,3 +1,20 @@
+/*
+  Autor:DONIZETE CRISOSTOMO BARBOSA
+  Analise e Desenvolvimento de Sistemas
+  Faculdade de Tecnologia de Ribeir˜ao Preto
+  Linguagem de programação
+
+  Escreva um programa de criptografia que tenha as seguintes funções:
+
+  1 - Ler arquivo texto (original ou criptografado).
+  2 - Criptografar
+  3 - Descriptografar
+  9 - Sair
+
+Você poderá utilizar um algoritmo de criptografia de sua preferência (a ser pesquisado de acordo com o seu interesse).
+*/
+
+
 #include<iostream>
 #include <stdio.h>
 #include<stdlib.h>
@@ -8,7 +25,7 @@ using namespace std;
 
 int main()
 {
-    //Quantidade de caracter e as variaveis de entrada
+    //Variaveis de entrada quantidade de caracter
     char textoDigitado[1000],textoCarregado[5000];
     int i,tamanho,op,arquivo;
 
@@ -42,17 +59,16 @@ int main()
             break;
 
         case 2:
-
             system("cls");
-            //declaracão varialve do tipo ponteiro
+            //declaracão varialvel do tipo ponteiro
             FILE *arquivo;
-            //retorna arquivo
+            //retorna arquivo e necessario deixar um arquivo .txt junto ao arquivo cpp para executar o programa carregado
             arquivo = fopen("texto.txt","r");
             //null quando o arquivo nao foi aberto
             if (arquivo==NULL)
             {
-                printf("\nProblema ao abrir o arquivo\n\n");
-
+                printf("\nATENCAO!!! Problema ao abrir o arquivo\n\n");
+                printf("OBS: TALVEZ O ARQUIVO .TXT NAO ESTEJA JUNTO AO ARQUIVO CPP\n\n\n ");
                 return 0;
             }
             //pegando os caracteres lidos no textos pegando caracter por caracter
@@ -61,8 +77,10 @@ int main()
                 textoCarregado[i]=fgetc(arquivo);
             fclose(arquivo);
             printf("\n%s",textoCarregado);
+            cout<<""<<endl;
+            cout<<""<<endl;
+            cout<<""<<endl;
             system("pause");
-
 
             break;
 
@@ -71,20 +89,17 @@ int main()
             cout << "CRIPTOGRAFAR\n\n\n";
             //retorna um inteiro o comprimento da string
             tamanho = strlen(textoCarregado);
+
+            //criptografando o texto carregado
             for(i=0; i<tamanho; i++)
                 textoCarregado[i]=textoCarregado[i]+3;
-                    cout <<"\n\n"<<textoCarregado << "\n\n\n\n";
-
-
-
+            cout <<"\n\n"<<textoCarregado << "\n\n\n\n";
 
             tamanho = strlen(textoDigitado);
+            //criptografando o texto digitado
             for(i=0; i<tamanho; i++)
-
                 textoDigitado[i]=textoDigitado[i]+3;
-
             cout<<"\n\n"<<textoDigitado<<"\n\n\n";
-
             cout << "\n\nTexto criptografado  com sucesso!!\n\n";
 
             system("pause");
@@ -93,15 +108,15 @@ int main()
         case 4:
             system("cls");
             cout<<"DESCRIPTOGRAFADO\n\n";
+            //retorna um inteiro o comprimento da string
             tamanho = strlen(textoCarregado);
+            //descriptografando texto carregado
             for (i=0; i<tamanho; i++)
-
                 textoCarregado[i]=textoCarregado[i]-3;
             cout<<"\n\n"<<textoCarregado<<"\n\n";
 
-
-
             tamanho = strlen(textoDigitado);
+            //descriptografando texto digitado
             for (i=0; i<tamanho; i++)
                 textoDigitado[i]=textoDigitado[i]-3;
             cout <<"\n\n"<<textoDigitado<<"\n\n";
@@ -125,47 +140,4 @@ int main()
 
 
 
-
-
-//
-//
-//
-//
-//
-//        do
-//        {
-//            cout << "Digite seu texto:" << endl;
-//            cin>>texto;
-//            tamanho = strlen(texto);
-//            for(i=0; i<tamanho; i++)
-//                texto[i]=texto[i]+3;
-//            cout <<"\n\n"<<texto << "\n\n";
-//            for (i=0; i<tamanho; i++)
-//                texto[i]=texto[i]-3;
-//            cout <<"\n\n"<<texto<<"\n\n";
-//
-//            switch(op)
-//            {
-//            case 1 :
-//                system("cls");
-//                printf("DIGITAR TEXTO: ");
-//                scanf("%d",&texto);
-// system("pause");
-//                break;
-//
-//            case 2  :
-//                system("cls");
-//                printf("CARREGAR SEU TEXTO: ");
-//                 system("pause");
-//                break;
-//
-//
-//
-//            }
-//            while (op!=9);
-//
-//        }
-//
-//    return 0;
-//}
 
