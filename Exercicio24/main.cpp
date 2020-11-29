@@ -12,30 +12,18 @@ int main()
 
 {
 
+    char texto[MAX];
+    int i,tamanho;
+    cout << "Digite algo: ";
+    cin>>texto;
+    tamanho = strlen(texto);
+    for(i=0;i<tamanho;i++)
+      texto[i]=texto[i]+3;
+    cout<<"\n\n"<<texto<<"\n\n";
+    for(i=0;i<tamanho;i++)
+    texto[i]=texto[i]-3;
+    cout<<"\n\n"<<texto<<"\n\n";
 
- ​​
-
-    char expressao[MAX];
-    int tamanho;
-    cout << "Digite um nome: ";
-    fflush(stdin);
-    gets(expressao);
-    tamanho = strlen(expressao);
-    cout << "\n\nTamanho: " << tamanho << "\n\n";
-    cout << "\n\n" << expressao << "\n\n";
-
-
-
-    for(int i=0; i<tamanho; i++)
-
-        cout << expressao[i];
-
-
-
-    cout << "\n\n";
-
-
-
+return 0;
 
 }
-}​​
