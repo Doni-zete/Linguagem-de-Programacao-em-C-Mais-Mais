@@ -8,11 +8,13 @@ using namespace std;
 
 int main()
 {
-    char textoDigitado[1000],textoCarregado[2000];
+    //Quantidade de caracter e as variaveis de entrada
+    char textoDigitado[1000],textoCarregado[5000];
     int i,tamanho,op,arquivo;
 
     do
     {
+        //Menu de opçoes
         system("cls");
         cout << "\t* * * * *   M E N U    * * * * *\n\n\n";
         cout << "\n1 - DIGITE SEU TEXTO";
@@ -23,8 +25,10 @@ int main()
         cout<<"\n\nDIGITE UMA  OPCAO: ";
         cin >> op;
 
+        //switch case para escolha da opção
         switch (op)
         {
+        //variavel de entrada para palavras
         case 1 :
             system("cls");
             cout << "Digite seu texto:" << endl;
@@ -40,14 +44,19 @@ int main()
         case 2:
 
             system("cls");
+            //declaracão varialve do tipo ponteiro
             FILE *arquivo;
+            //retorna arquivo
             arquivo = fopen("texto.txt","r");
+            //null quando o arquivo nao foi aberto
             if (arquivo==NULL)
             {
                 printf("\nProblema ao abrir o arquivo\n\n");
+
                 return 0;
             }
-            char textoCarregado[1000];
+            //pegando os caracteres lidos no textos pegando caracter por caracter
+            char textoCarregado[5000];
             for (i=0; !feof(arquivo); i++)
                 textoCarregado[i]=fgetc(arquivo);
             fclose(arquivo);
@@ -60,16 +69,16 @@ int main()
         case 3 :
             system("cls");
             cout << "CRIPTOGRAFAR\n\n\n";
+            //retorna um inteiro o comprimento da string
             tamanho = strlen(textoCarregado);
             for(i=0; i<tamanho; i++)
-
                 textoCarregado[i]=textoCarregado[i]+3;
-{
-            cout <<"\n\n"<<textoCarregado << "\n\n\n\n";
-            }
+                    cout <<"\n\n"<<textoCarregado << "\n\n\n\n";
 
 
 
+
+            tamanho = strlen(textoDigitado);
             for(i=0; i<tamanho; i++)
 
                 textoDigitado[i]=textoDigitado[i]+3;
