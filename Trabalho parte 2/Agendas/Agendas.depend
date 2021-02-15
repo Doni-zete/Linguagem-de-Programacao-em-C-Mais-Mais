@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1613265889 source:c:\users\donii\documents\fatec\cursos\github\linguagem-de-programacao-em-c-mais-mais\trabalho parte 2\agendas\main.cpp
+	<stdio.h>
+	<string.h>
+	<stdlib.h>
+
