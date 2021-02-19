@@ -8,4 +8,5 @@ int main(int argc, char *argv[]){
 Agenda minhaAgenda;
 minhaAgenda.qtd =0;
 
+return 0;
 }
